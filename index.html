@@ -12,14 +12,14 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor odio beatae, facere a omnis harum veritatis ullam quisquam architecto saepe distinctio fugiat! Ipsa aperiam magnam omnis. Atque blanditiis facilis perferendis?</p>
         <button id = 'but'>Тест</button>
     </div>
-    
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         let tg = window.Telegram.WebApp;
         let but = document.getElementById('but')
 
         but.addEventListener('click', () =>
         {
-            tg.sendData(tg.initData)
+            tg.sendData(tg.initData.user)
         })
 
     </script>
