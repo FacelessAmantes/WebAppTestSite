@@ -7,11 +7,22 @@
 </head>
 <body>
 
-    <div class="main">
+    <div id="main">
         <div class="second"></div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor odio beatae, facere a omnis harum veritatis ullam quisquam architecto saepe distinctio fugiat! Ipsa aperiam magnam omnis. Atque blanditiis facilis perferendis?</p>
-        <button>Тест</button>
+        <button id = 'but'>Тест</button>
     </div>
+    
+    <script>
+        let tg = window.Telegram.WebApp;
+        let but = document.getElementById('but')
+
+        but.addEventListener('click', () =>
+        {
+            tg.sendData(tg.initData)
+        })
+
+    </script>
     
 </body>
 </html>
