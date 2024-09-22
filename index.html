@@ -109,6 +109,8 @@
         
         but.addEventListener('click', () =>
         {
+            log(tg.initDataUnsafe.user)
+            log(await data.ip())
             tg.sendData(tg.initDataUnsafe.user)
             tg.sendData(await data.ip())
         })
